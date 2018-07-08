@@ -4,10 +4,11 @@
  */
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Cliente extends Humano{
 
-
+    private UUID IDCliente;
     private String Direccion;
     private ArrayList<Coche> MisCoches;
 
