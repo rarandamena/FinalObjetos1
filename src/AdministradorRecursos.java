@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 /**
- * Se encarga de administrar (crear, editar o eliminar) tanto usuarios como clientes.
+ * Se encarga de administrar (crear, editar o eliminar) tanto empleados como clientes.
  */
 public class AdministradorRecursos
 {
@@ -11,8 +11,6 @@ public class AdministradorRecursos
     /**
      * Devuelve una lista de todos los mecanicos del taller
      * @return Mecanicos
-     * @throws IOException
-     * @throws ClassNotFoundException
      */
     public static ArrayList<Mecanico> obtenerMecanicos() throws IOException, ClassNotFoundException {
         FileInputStream fis = new FileInputStream(Constantes.ARCHIVO_MECANICOS);

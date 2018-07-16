@@ -23,6 +23,9 @@ public class Taller
      */
     public void repararAutos()
     {
+        System.out.println("Observando trabajo...");
+
+
         asignarAutosAEmpleados();
 
         for(Mecanico mecanico : mecanicos)
@@ -34,7 +37,7 @@ public class Taller
         for(Pintor pintor : pintores)
             pintor.start();
 
-        System.out.println("Observando trabajo...");
+
         while (!autosEnReparacion.isEmpty())
         {
             for(Automovil automovil : autosEnReparacion)
