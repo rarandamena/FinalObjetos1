@@ -1,24 +1,49 @@
-/**
- * el cliente hace referencia a que puede tener mas de un coche, tiene las propiedades del humano, y tiene una direccion
- * de vivienda
- */
-
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class Cliente extends Humano{
+/**
+ * El cliente del taller, tiene asociado un coche.
+ */
+public class Cliente
+{
+    private String nombre;
+    private String apellido;
+    private UUID numeroCliente;
+    private Automovil automovil;
 
-    private UUID IDCliente;
-    private String Direccion;
-    private ArrayList<Coche> MisCoches;
+    public Cliente(String nombre, String apellido, Automovil automovil)
+    {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.numeroCliente = UUID.randomUUID();
+        this.automovil = automovil;
+    }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-    public Cliente(String nombre, String Apellido, int edad) {
-        super(nombre, Apellido, edad);
+    public String getApellido() {
+        return apellido;
+    }
 
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
+    public UUID getNumeroCliente() {
+        return numeroCliente;
+    }
 
+    public Automovil getAutomovil() {
+        return automovil;
+    }
 
+    public void setAutomovil(Automovil automovil) {
+        this.automovil = automovil;
     }
 }
